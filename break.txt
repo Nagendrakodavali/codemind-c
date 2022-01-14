@@ -1,0 +1,268 @@
+#include<stdio.h>
+void main()
+{
+	int n,i,fc=0;
+	scanf("%d",&n);
+	for(i=2;i<=n/2; i++)
+	{
+		if(n%i ==0)
+		{
+			fc++;
+			break;
+		}
+	}
+	if(fc ==0)
+	{
+		printf("prime");
+	}
+	else
+	{
+		printf("not prime");
+	}
+}
+..........................................................................................................................................
+
+#include<stdio.h>
+main()
+{
+	int a,b,i;
+	scanf("%d%d",&a,&b);
+	for(i=a;i<=b;i++)
+	{
+		if(i%2==0)
+		{
+			printf("%d",i);
+		}
+	}
+}
+.............................................................................................................................................
+
+#include<stdio.h>
+void main()
+{
+	int i=1;
+	while(1)
+	{
+		printf("%d",i);              even numbers
+		if(i==0)
+		{
+			break;
+		}
+		i++;
+	}
+}
+................................................................................................................
+
+#include<stdio.h>
+void main()
+{
+	int n,r,e=0,o=0,z=0;
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+		if(r==0)
+		{
+			z++;
+		}
+		else if(r%2==0)
+		{
+			e++;
+		}
+		else
+		{
+			o++;
+		}
+		n=n/10;
+	}
+	printf("%d %d %d",z,e,o);
+}
+..............................................................................................................
+
+infinitim loop break.c
+
+#include<stdio.h>
+void main()
+{
+	int i=1;
+	for(;;)
+	{
+		printf("%d",i);
+		if(i==90)
+		{
+
+				break;
+
+		}i++;
+	}
+}
+...............................................................................................................
+
+#include<stdio.h>
+void main()
+{
+	int r,n,is_duck=0;
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r =n%10;
+		if (r == 0)
+		{
+			is_duck=1;
+			break;                          duck number
+		}
+		n=n/10;
+	}
+	if(is_duck==1)
+	{
+		printf("duck number");
+	}
+	else
+	{
+		printf("not a duck number");
+	}
+}
+ .............................................................................................................
+product of natural numbers using loops
+
+#include<stdio.h>
+main()
+{int a,b,product=1;
+scanf("%d",&a);
+for(b=1;a>=b;b++)
+{
+	product*=b;
+}
+printf("%d",product);
+}
+................................................................................................................
+sum of the natural numbersusing loops
+#include<stdio.h>
+main()
+{
+	int a,b,sum=0;
+	scanf("%d",&a);
+	for(b=1;b<=a;b++)
+	{
+		sum +=b;
+	}
+	printf("%d",sum);
+}
+...............................................................................................................
+
+true false
+#include<stdio.h>
+void main()
+{
+	if(0)
+	{
+		printf("hii");
+	}
+	else
+	{
+		printf("bye");
+	}
+}
+....................................................................................................................
+average of two numbers
+
+#include<stdio.h>
+int main()
+{
+    float a=12,b=13;
+    float c;
+    scanf("%f%f",&a,&b);
+    c=(a+b)/2;
+    printf("%.4f",c);
+}
+......................................................................................................................
+current bill
+
+#include<stdio.h>
+void main()
+{
+	float units,bill,surchase,totalamount;
+	printf("enter no of units");
+	scanf("%f",&units);
+	if(units<199)
+	{
+		bill=units*1.20;
+		printf(" bill amount is %f",bill);
+		
+	}
+	else if(units>=200 && units<400)
+	{
+		bill=units*1.50;
+		printf(" bill amount is %f",bill);
+		
+	}
+	else if(units>=400 && units<600)
+	{
+		bill=units*1.80;
+		printf(" bill amount is %f",bill);
+		
+	}
+	else if(units>=600)
+	{
+		bill=units*2.00;
+		printf(" bill amount is %f",bill);
+	}
+	if(bill>400)
+	{
+		surchase=bill/100*15;
+		printf("\nsurchase amount is %f",surchase);
+	}
+	else
+	{
+		printf("\nsurchase amount=0");
+	}
+		totalamount=bill+surchase;
+		printf("\ntotal amount is %f",totalamount);
+}
+...................................................................................................................
+
+
+profit 
+
+#include<stdio.h>
+main()
+{
+	int sp,cp;
+	printf("enter cp and sp");
+	scanf("%d%d",&cp,&sp);
+	if(cp<sp)
+	{
+		printf("profit %d%%",(sp-cp)*100/cp);
+	}
+	else if(cp>sp)
+	{
+		printf("loss %d%%",(cp-sp)*100/sp);
+	}
+	else
+	{
+		printf("no lose no profit");
+	}
+}
+..................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
